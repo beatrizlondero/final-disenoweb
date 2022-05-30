@@ -1,0 +1,35 @@
+@import 'contacto.scss';  
+@import 'index.scss';
+@import 'ubicacion.scss';
+@import 'titulo.scss';
+@import 'servicios.scss';
+@import 'envios.scss';
+@import 'preguntas.scss';
+$colorfont: #dd5151;
+@font-face {
+    font-family: 'Emblem';
+    src: url('../fonts/emblem_1-webfont.woff2') format('woff2'),
+      url('../fonts/emblem_1-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'bnkgo';
+    src: url('../fonts/bnkgothm_1-webfont.woff2') format('woff2'),
+      url('../fonts/bnkgothm_1-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'EmblemI';
+    src: url('../fonts/emblemi_1-webfont.woff2') format('woff2'),
+      url('../fonts/emblemi_1-webfont.woff') format('woff');
+    font-style: italic;
+    font-weight: normal;
+  }
+body{
+  background: rgb(127,127,129);
+  background: linear-gradient(56deg, rgba(127,127,129,1) 0%, rgba(14,14,14,1) 72%, rgba(144,147,147,1) 100%);
+  
+    // background-color: black;
+  }

@@ -1,0 +1,172 @@
+$colorfont: #dd5151;
+.confian {
+    font-family: EmblemI;
+    font-size: 18px;
+    color: bisque;
+    text-align: center;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+    padding: 10px;
+    border: 2px grey solid;
+    justify-content: center;
+    
+}
+.lista-rep{
+    @extend .repuestos;
+    padding: 5px;
+    text-align: center;
+}
+
+.lista_especialistas{
+    height: 200px;
+}
+.especialidades {
+    color: $colorfont;
+    font-family: Emblem;
+    font-size: 12px;
+    list-style-type: none;
+    text-align: center;
+}
+.img-productos-sm{
+    width: 100px;
+    display: none;
+}
+.img-productos-amor, .img-productos-dir, .img-productos-bomba {
+    display: block;
+    width: 100px;
+}
+
+.imagenes_marcas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.marca{
+    width: 100px;
+    height: 80px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .lista-rep{
+        padding: 10px;
+        transform: translate(-20px);
+
+    }
+
+    .confian{
+        font-size: 25px;
+    }
+    .img-productos-amor, .img-productos-bomba, .img-productos-dir {
+        display:block;
+        width: 250px;
+        height: 150px;
+    }
+    .img-productos-sm{
+        display: none;
+    }
+    .especialidades {
+        font-size: 18px;
+        li{
+            transition: 1s;
+        }    
+    }
+    .especialidades li:hover{
+        font-size: 25px;
+    }
+    .lista_especialistas{
+        height: 350px;
+    }
+    .marca{
+        width: 120px;
+        height: 100px;
+        transition: 2s;
+    }
+    .marca:hover{
+            border: red 3px solid;
+            width: 140px;
+            height: 120px;
+        }
+    .frase-footer{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: $colorfont;
+    }
+}
+@media screen and ( min-width: 1000px){
+    .lista-rep{
+        padding: 15px;
+        transform: translate(-40px);
+        
+    }
+    .confian{
+        font-size: 40px;
+    }
+    .img-productos-amor, .img-productos-bomba, .img-productos-dir {
+        width: 300px;
+        height: 250px;
+    }
+    .especialidades {
+        font-size: 22px;
+        li{
+        transition: 1s;
+        }
+    }
+    .especialidades li:hover{
+        font-size: 30px;
+    }
+    .lista_especialistas{
+        height: 400px;
+    }
+    .marca{
+        width: 140px;
+        height: 120px;
+        transition: 3s;
+    }
+    .marca:hover{
+        animation-name: moverse;
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+
+    }
+    @keyframes moverse {
+        0%{
+            transform:rotate(3deg);
+        }
+        10%{
+            transform: rotate(6deg);
+        }
+        20%{
+            transform: rotate(9deg);
+        }
+        30%{
+            transform: rotate(6deg);
+        }
+        40%{
+            transform: rotate(3deg);
+        }
+        50%{
+            transform: rotate(0deg);
+        }
+        60%{
+            transform: rotate(-3deg);
+        }
+        70%{
+            transform: skew(-6deg);
+        }
+        80%{
+            transform: skew(-9deg);
+        }
+        90%{
+            transform: skew(-6deg);
+        }
+        100%{
+            transform: skew(-3deg);
+        }
+    }
+}
+    

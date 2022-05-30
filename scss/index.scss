@@ -1,0 +1,120 @@
+.barra-titulo {
+    font-family: 'bnkgo';
+    font-size: 12px; 
+    color: #f0ffff;
+    list-style-type: none;
+    text-align:center;
+    
+}
+
+.fondo-inicio-p{
+    justify-content: center;
+    display: block;
+    width: 300px;    
+}
+.fondo-inicio{
+    justify-content: center;
+    display: block;
+    width: 300px;
+}
+/* barra social media */
+.social {
+	position: fixed; /* posición en pantalla fija */
+	right: 0; /* Establecemos la barra a la derecha */
+	top: 350px; /* Bajo la barra de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+    $map-social:( 
+        icon-facebook:#3b5998,
+        icon-instagram:#e85e7a,
+        icon-whatsapp:#6baf72,
+        icon-mail:#91cce3
+        ); //mapa para color detras de los iconos de redes sociales
+    ul {
+		list-style: none;
+        @each $red,$color-fondo in $map-social {
+            .#{$red} { background-color: $color-fondo};
+            
+        }
+        
+        li a {
+            display: inline-block;
+            color:#fff;
+            background: #000;
+            padding: 10px 15px;
+            text-decoration: none;
+            -webkit-transition:all 500ms ease;
+            -o-transition:all 500ms ease;
+            transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+            img {width: 20px;}
+            
+        }
+	}
+
+}
+// formato letra menu
+.nav-link{
+    font-family: 'bnkgo';
+    
+}
+.frase-footer{
+    @extend .repuestos;
+}    
+.pagos{
+    width: 40px;
+    border: black solid 4px;
+    padding: 2px;
+}
+@media screen and (min-width: 768px) {
+    .nav-link{
+        font-size:16px;
+        
+    }
+    .barra-titulo {
+        font-size: 16px; 
+        
+    }
+    .social {
+        top: 350px; /* Bajamos la barra 250px de arriba a abajo */
+        left: 0;
+    }
+    .fondo-inicio-p{
+        display: none;    
+    }
+    .fondo-inicio{
+        display:block;
+        width: 760px;
+    }
+    .social ul li a{
+        img {width: 50px;}  
+    }
+    .social ul li a:hover {
+        background: rgb(113, 112, 112); /* Cambiamos el fondo cuando el usuario pase el mouse */
+        padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+    } 
+    .pagos{
+        width: 80px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .nav-link{
+        font-size:18px;
+        
+    }
+    .barra-titulo {
+        font-size: 18px; 
+        
+    }
+    .fondo-inicio{
+        width: 1000px;
+    }
+    .social {
+        top: 400px; /* Bajamos la barra 250px de arriba a abajo */
+        .ul li a img {width: 60px;}
+    }
+    .pagos{
+        width: 100px;
+    }
+    .frase-footer{
+        font-size: 55px;
+    }
+}

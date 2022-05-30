@@ -1,0 +1,37 @@
+.datos_ubicacion iframe{
+        padding: 5px;
+        width: 260px;
+        height: 250px;
+}
+.titulo {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'bnkgo';
+    color: #f14e4e;
+    
+}
+.col-sm-6{
+    padding: 3%;
+}
+
+@media screen and (min-width: 768px) {
+    .datos_ubicacion iframe {
+        padding: 15px;
+        width: 350px;
+        height: 450px;
+
+    }
+    
+    .titulo{ font-size: 25px;}
+}
+@media screen and (min-width: 1024px) {
+    .datos_ubicacion iframe {
+        padding: 15px;
+        width: 450px;
+        height: 450px;
+    
+    }
+    .titulo{
+        font-size: 30px;
+    }
+}
