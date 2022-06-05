@@ -411,11 +411,16 @@
     font-size: 2.5em; } }
 
 .respuesta {
-  font-size: 14px; }
+  font-size: 12px; }
+
+.respuesta2 {
+  color: antiquewhite; }
 
 @media screen and (min-width: 768px) {
   .pregunta {
-    font-size: 30; } }
+    font-size: 30; }
+  .respuesta {
+    font-size: 14px; } }
 
 @media screen and (min-width: 1024px) {
   .pregunta {
